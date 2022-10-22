@@ -45,46 +45,7 @@ def clearButton():
 
 
 def check():
-	global ptr1,ptr2,p1_score,p2_score,ctr
-	if (btn1["text"] == "X" and btn2["text"] == "X" and btn3["text"] == "X" or 
-		btn4["text"] == "X" and btn5["text"] == "X" and btn6["text"] == "X" or 
-		btn7["text"] == "X" and btn8["text"] == "X" and btn9["text"] == "X" or 
-		btn1["text"] == "X" and btn5["text"] == "X" and btn9["text"] == "X" or 
-		btn3["text"] == "X" and btn5["text"] == "X" and btn7["text"] == "X" or 
-		btn1["text"] == "X" and btn4["text"] == "X" and btn7["text"] == "X" or 
-		btn2["text"] == "X" and btn5["text"] == "X" and btn8["text"] == "X" or 
-		btn3["text"] == "X" and btn6["text"] == "X" and btn9["text"] == "X"):
-
-
-		clearButton()
-		messagebox.showinfo("tictactoe","PLayer 1 win")
-		ptr1+=1
-		ctr=0
-		p1_score.set(ptr1)
-
-
-	elif(btn1["text"] == "O" and btn2["text"] == "O" and btn3["text"] == "O" or
-			btn4["text"] == "O" and btn5["text"] == "O" and btn6["text"] == "O" or
-			btn7["text"] == "O" and btn8["text"] == "O" and btn9["text"] == "O" or
-			btn1["text"] == "O" and btn5["text"] == "O" and btn9["text"] == "O" or
-			btn3["text"] == "O" and btn5["text"] == "O" and btn7["text"] == "O" or
-			btn1["text"] == "O" and btn4["text"] == "O" and btn7["text"] == "O" or
-			btn2["text"] == "O" and btn5["text"] == "O" and btn8["text"] == "O" or
-			btn7["text"] == "O" and btn6["text"] == "O" and btn9["text"] == "O"):	
-
-
-			clearButton()
-			messagebox.showinfo("tictactoe","PLayer 2 win")
-			ptr2+=1
-			ctr=0
-			p2_score.set(ptr2)	
-
-
-	elif(ctr == 9):
-		messagebox.showinfo("tictactoe","It is a tie")
-		clearButton()
-		ctr=0
-
+	
 
 
 f = Frame(root)
